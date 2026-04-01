@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: marketmate-whatsapp-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: WHATSAPP_TOKEN
+        sync: false        # Set manually in Render dashboard
+      - key: WHATSAPP_PHONE_ID
+        sync: false        # Set manually in Render dashboard
+      - key: VERIFY_TOKEN
+        value: marketmate_verify_2025
+      - key: OLLAMA_URL
+        value: http://localhost:11434
+      - key: OLLAMA_MODEL
+        value: llama3
