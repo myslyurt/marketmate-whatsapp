@@ -118,4 +118,8 @@ Push to GitHub → connect repo on render.com → add env vars → deploy.
 
 ## 📄 License
 
-MIT — Built by [Your Name] · [Upwork](https://upwork.com)
+MIT
+
+---
+
+Built by [Murat Yesilyurt] — available for WhatsApp bot & AI integration projects on [Upwork](https://www.upwork.com/freelancers/~01e45f433b6bc60914).
